@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Vertical Image</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #ffffff; /* optional */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .image-container {
+      width: 100%;
+      max-width: 480px; /* keeps it nice on larger phones */
+      padding: 10px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px; /* optional styling */
+    }
+
+    /* Optional: better spacing on larger devices */
+    @media (min-width: 600px) {
+      .image-container {
+        max-width: 600px;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .image-container {
+        max-width: 700px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="image-container">
+    <img src="./Menu_outside_changed price.png" alt="Vertical Image">
+  </div>
+
+</body>
+</html>
